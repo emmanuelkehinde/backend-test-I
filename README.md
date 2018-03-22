@@ -43,3 +43,30 @@ We look forward to seeing what you can do. Remember, although it is a test, ther
 
 ## Demo
 ![screen shot](https://user-images.githubusercontent.com/8668661/33088863-330b4250-ceef-11e7-9e9c-b4fd9ca299d8.gif)
+
+
+## Solution
+
+#### Tools used are:
+ - Twitter4j
+ - Google Sheet API
+ 
+### 1. Twitter4j
+Twitter4J is an unofficial Java library for the [Twitter API](https://dev.twitter.com/docs). With Twitter4J, you can easily 
+integrate your Java application with the Twitter service. 
+Simply create a new twitter application from [here](http://apps.twitter.com/). Get the token and secrets needed and fill them in the `Constants.java` class.
+
+### 2. Google Sheet API
+The Sheets API gives you full control over the content and appearance of your spreadsheet data. Check [here](https://developers.google.com/sheets/api/quickstart/java) for how to setup a new project.
+When done, add the downloaded client_secret.json file to the resources folder in the `scr/main` folder, as in `src/main/resources/client_secret.json`.
+
+## Building and running the project
+The project uses [Gradle](https://gradle.org/) as a build tool and for dependency management. So you need to build the project to get the necessary dependencies downloaded.
+
+Also create a new spreadsheet and pass in the google sheet ID as `SPREADSHEET_ID` in the `Constants.java` class.
+
+Once all those are done, we are good to go!
+
+Simply run it as a Java application using the default `Run` button for your IDE.
+
+#### Check out the demo [here](http://take.ms/Wqnef)

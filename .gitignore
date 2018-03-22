@@ -1,0 +1,7 @@
+src/main/resources/client_secret.json
+.idea
+.gradle
+gradle
+out
+build
+src/test

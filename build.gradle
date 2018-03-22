@@ -1,0 +1,24 @@
+group 'com.emmanuelkehinde'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'Application'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.twitter4j', name: 'twitter4j-core', version:'[4.0,)'
+    compile group: 'org.twitter4j', name: 'twitter4j-stream', version:'[4.0,)'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    compile 'com.google.api-client:google-api-client:1.23.0'
+    compile 'com.google.oauth-client:google-oauth-client-jetty:1.23.0'
+    compile 'com.google.apis:google-api-services-sheets:v4-rev512-1.23.0'
+}
